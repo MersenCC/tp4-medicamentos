@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Farmacyti</title>
+</head>
+<body id="body-index">
+    <header>
+        <section>
+            <div class="title-text">
+                <p class="main-title" id="titulo-index">Hola, Usuario!</p>
+                <p class="sub-title">Veamos la siguiente lista de horarios</p>
+            </div>
+            <article class="main-product" id="main-product-index">
+                
+            </article>
+        </section>
+    </header>
+    <main>
+        <p class="main-title">Horario de Hoy</p>
+        <section class="all-products" id="all-products-index">
+            
+        </section>
+    </main>
+    <footer>
+        <div class="icon-container">
+            <div class="icon active">
+                <span class="material-icons-outlined">home</span>
+            </div>
+            <div class="icon">
+                <span class="material-icons-outlined" onclick="go_to('calendar')">calendar_month</span>
+            </div>
+        </div>
+        <div class="icon-add">
+            <span class="material-icons-outlined" onclick="go_to('add')">add</span>
+        </div>
+        <div class="icon-container">
+            <div class="icon">
+                <span class="material-icons-outlined" onclick="go_to('graphic')">poll</span>
+            </div>
+            <div class="icon">
+                <span class="material-icons-outlined" onclick="go_to('profile')">person</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>

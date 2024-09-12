@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: rgba(231, 230, 230, 0.808);
+    padding: 15px;
+}
+
+.gray{
+    color: rgba(83, 83, 83, 0.849);
+}
+
+.main-title{
+    font-size: 1.5em;
+    font-weight: 1000;
+}
+
+.sub-title{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+header{
+    width: 100%;
+    height: 48%;
+
+    & .calendar-container{
+        width: 100%;
+        height: 90%;
+        padding: 20px;
+
+        & .calendar{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            background-color: white;
+            border-radius: 50px;
+            padding: 30px;
+
+            & ul{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                font-size: 1.3em;
+                grid-gap: 13px;
+                font-weight: 600;
+                text-align: center;
+    
+                & li{
+                    position: relative;
+                    width: 45px;
+                    height: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 17px;
+                    justify-content: flex-start;
+                    list-style: none;
+                    align-items: center;
+                    padding: 10px;
+    
+                    & p{
+                        text-align: center;
+                    }
+    
+                    & div{
+                        position: absolute;
+                        width: 100%;
+                        height: 25px;
+                        display: flex;
+                        justify-content: center;
+                        gap: 5px;
+                        top: 25px;
+    
+                        & .right{
+                            color: rgba(128, 128, 128, 0.664);;
+                        }
+                    }
+                }
+    
+                & .registered{
+                    border: solid 2px rgba(128, 128, 128, 0.664);
+                }
+            }
+    
+            & .week{
+                & li:hover{
+                    cursor: pointer;
+                    border: solid 2px rgba(128, 128, 128, 0.664);
+                }
+            }
+        }
+    }
+}
+
+main{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+
+    & .all-products{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        & .product{
+            width: 100%;
+            height: auto;
+            display: flex;
+            gap: 10px;
+            
+            & .interval{
+                width: 13%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            & .product-info{
+                width: 83%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.89);
+                border-radius: 20px;
+
+                & .line-container{
+                    width: 10%;
+                    height: 65%;
+                    display: flex;
+                    justify-content: center;
+
+                    & .line{
+                        width: 2.5px;
+                        height: 100%;
+                        border: solid 2.5px black;
+                        border-radius: 25px;
+                    }
+                }
+
+                & .product-img{
+                    width: 20%;
+                    height: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                & .product-desc{
+                    width: 80%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 10px;
+                }
+            }
+        }
+
+        & .mid-line{
+            position: relative;
+            width: 100%;
+            height: 5px;
+            display: flex;
+
+            & .dot{
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 25px;
+                background-color: black;
+                top: -5px;
+                right: 48%;
+            }
+
+            & hr{
+                width: 100%;
+                height: 1px;
+                border: solid 2.5px black;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+main::-webkit-scrollbar{
+    display: none;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    & .icon{
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(128, 128, 128);
+
+        & span{
+            font-size: 2.5em!important;
+        }
+    }
+
+    & .icon:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    & .icon-add{
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        border-radius: 23px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        top: -30px;
+
+        & span{
+            font-size: 2.3em!important;
+        }
+    }
+
+    & .icon-add:hover{
+        cursor: pointer;
+    }
+
+    & .icon-container{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.active{
+    color: rgb(231, 231, 231)!important;
+    background-color: black;
+    border-radius: 30px!important;
+}
+
+.selected{
+    background-color: black;
+    color: white;
+    border: solid 2px rgba(128, 128, 128, 0.664);
+}

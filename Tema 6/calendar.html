@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Calendario</title>
+</head>
+<body>
+    <header>
+        <p class="main-title">Calendario</p>
+        <div class="calendar-container">
+            <div class="calendar">
+                <ul class="week">
+                    <li>
+                        <p class="gray">L</p>
+                    </li>
+                    <li>
+                        <p class="gray">M</p>
+                    </li>
+                    <li>
+                        <p class="gray">M</p>
+                    </li>
+                    <li>
+                        <p class="gray">J</p>
+                    </li>
+                    <li>
+                        <p class="gray">V</p>
+                    </li>
+                    <li>
+                        <p class="gray">S</p>
+                    </li>
+                    <li>
+                        <p class="gray">D</p>
+                    </li>
+                    <li onclick="select(this)">
+                        <p>21</p>
+                    </li>
+                    <li class="registered" onclick="select(this)">
+                        <p>22</p>
+                        <div>
+                            <p class="left">.</p>
+                            <p class="right">.</p>
+                        </div>
+                    </li>
+                    <li onclick="select(this)">
+                        <p>23</p>
+                    </li>
+                    <li onclick="select(this)">
+                        <p>24</p>
+                    </li>
+                    <li onclick="select(this)">
+                        <p>25</p>
+                    </li>
+                    <li class="registered" onclick="select(this)">
+                        <p>26</p>
+                        <div>
+                            <p class="left">.</p>
+                            <p class="right">.</p>
+                        </div>
+                    </li>
+                    <li onclick="select(this)">
+                        <p>27</p>
+                    </li>
+                    <li onclick="select(this)">
+                        <p>28</p>
+                    </li>
+                    <li onclick="select(this)">
+                        <p>29</p>
+                    </li>
+                    <li class="registered selected" onclick="select(this)">
+                        <p>30</p>
+                        <div>
+                            <p class="left">.</p>
+                            <p class="right">.</p>
+                        </div>
+                    </li>
+                    <li onclick="select(this)">
+                        <p>31</p>
+                    </li>
+                    <li onclick="select(this)" class="gray">
+                        1
+                    </li>
+                    <li onclick="select(this)" class="gray">
+                        2
+                    </li>
+                    <li onclick="select(this)" class="gray">
+                        3
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p class="main-title" id="main-title-calendar">Hoy</p>
+        <section class="all-products" id="all-products-calendar">
+            
+        </section>
+    </main>
+    <footer>
+        <div class="icon-container">
+            <div class="icon">
+                <span class="material-icons-outlined" onclick="go_to('home')">home</span>
+            </div>
+            <div class="icon active">
+                <span class="material-icons-outlined">calendar_month</span>
+            </div>
+        </div>
+        <div class="icon-add">
+            <span class="material-icons-outlined" onclick="go_to('add')">add</span>
+        </div>
+        <div class="icon-container">
+            <div class="icon">
+                <span class="material-icons-outlined" onclick="go_to('graphic')">poll</span>
+            </div>
+            <div class="icon">
+                <span class="material-icons-outlined" onclick="go_to('profile')">person</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>
