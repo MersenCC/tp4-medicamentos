@@ -84,9 +84,7 @@ function show_blur(obj){
     time = $(time).children()[0]
     time = $(time).children()[1]
     time = $(time).children()[2]
-    // time = $(time).text()
-
-    console.log(time)
+    time = $(time).text()
 
     let hour = time.slice(10, -3)
     let minute = time.slice(13)
