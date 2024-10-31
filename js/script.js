@@ -1,5 +1,5 @@
 let hoy = 30
-let usuarioActual = 1
+let usuarioActual = 0
 let idMedicine = location.href
 idMedicine = parseInt(idMedicine.slice(-1))
 
