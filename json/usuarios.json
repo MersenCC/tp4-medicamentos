@@ -3,7 +3,7 @@
         "id": 0,
         "name": "Marco",
         "desc": "Soy alergico a las nueces",
-        "image": "profile.png",
+        "image": "profile2.gif",
         "medicines": [0,1],
         "main": 0
     },
@@ -11,7 +11,7 @@
         "id": 1,
         "name": "Jorge",
         "desc": "Tengo coronavirus, ojo",
-        "image": "profile2.gif",
+        "image": "profile.png",
         "medicines": [1],
         "main": 1
     }
